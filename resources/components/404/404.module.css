@@ -1,0 +1,146 @@
+.block {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-block {
+    padding-top: 232px;
+    width: calc(100% - 40px);
+    max-width: 902px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-image {
+    width: 398px;
+    height: 360px;
+}
+
+.description-block {
+    max-width: 412px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-title {
+    font-size: 64px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(24, 24, 24, 1);
+    line-height: 75px;
+}
+
+.description-subtitle {
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(24, 24, 24, 1);
+    line-height: 46.88px;
+}
+
+.description-description {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(24, 24, 24, 1);
+    line-height: 23.44px;
+}
+
+.link-block {
+    margin-top: 60px;
+    border-radius: 30px;
+    width: max-content;
+}
+
+.description-button {
+    width: 303px;
+    height: 51px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgba(24, 24, 24, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    line-height: 21.09px;
+}
+
+@media (max-width:870px){
+    .content-image{
+        width: 332px;
+        height: auto;
+
+    }
+    .description-title{
+        font-size: 54px;
+        line-height: 65px;
+    }
+    .description-subtitle {
+        font-size: 30px;
+        line-height: 36.88px;
+    }
+}
+
+@media (max-width:800px){
+    .content-image{
+        width: 300px;
+        height: auto;
+
+    }
+    .description-title{
+        font-size: 44px;
+        line-height: 55px;
+    }
+    .description-subtitle {
+        font-size: 25px;
+        line-height: 31.88px;
+    }
+    .description-block{
+        max-width: 303px;
+    }
+}
+
+@media (max-width:659px){
+    .content-image{
+        width: 255px;
+        height: auto;
+        
+    }
+    .content-block{
+        padding-top: 102px;
+        flex-direction: column;
+    }
+    .description-title{
+        margin-top: 30px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .description-subtitle{
+        margin-top: 1px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .description-description{
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+    .link-block{
+        margin-top: 25px;
+    }
+}

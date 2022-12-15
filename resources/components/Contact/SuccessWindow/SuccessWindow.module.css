@@ -1,0 +1,106 @@
+.success-block {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(217, 217, 217, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-block {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgba(24, 24, 24, 1);
+    border-width: 1px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.content-title {
+    margin-top: 73px;
+    font-size: 64px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(24, 24, 24, 1);
+    line-height: 75px;
+}
+
+.content-description {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(24, 24, 24, 1);
+    line-height: 23.44px;
+}
+
+.button-block {
+    margin-top: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.content-button {
+    cursor: pointer;
+    width: 303px;
+    height: 51px;
+    border: none;
+    outline: none;
+    background-color: rgba(24, 24, 24, 1);
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    line-height: 21.09px;
+}
+
+@media (max-width: 640px) {
+    .content-block {
+        width: calc(100vw - 40px);
+        height: max-content;
+    }
+    .content-description {
+        max-width: calc(100% - 20px);
+    }
+    .button-block {
+        margin-bottom: 65px;
+    }
+}
+
+@media (max-width: 380px) {
+    .content-block {
+        width: 300px;
+        height: 200px;
+    }
+    .content-title {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 23.44px;
+    }
+    .content-description {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 17.58px;
+    }
+    .button-block {
+        margin-top: 20px;
+    }
+    .content-button {
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 17.58px;
+    }
+}

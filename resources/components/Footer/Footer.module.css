@@ -1,0 +1,131 @@
+.footer {
+    width: 100vw;
+    max-width: 1240px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cross-line {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    height: 1px;
+    background-color: rgba(225, 219, 219, 1);
+}
+
+.cross-line:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+.footer-content {
+    margin-top: 22px;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo-block {
+    width: max-content;
+    height: max-content;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.logo {
+    width: 61px;
+    height: 43px;
+}
+
+.link-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(131, 131, 131, 1);
+    line-height: 16.41px;
+    margin-bottom: 30px;
+}
+
+.item {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(24, 24, 24, 1);
+    line-height: 18.75px;
+    text-decoration: none;
+}
+
+.item:not(:first-of-type) {
+    margin-top: 14px;
+}
+
+.bottom-block {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.bottom-block span {
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-style: normal;
+    color: rgba(131, 131, 131, 1);
+    line-height: 18.75px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .link-block {
+        margin-top: 25px;
+    }
+    .title {
+        margin-bottom: 10px;
+    }
+    .contact-block {
+        margin-top: 25px;
+    }
+    .cross-line:not(:first-of-type) {
+        margin-top: 15px;
+    }
+    .bottom-block {
+        margin-top: 10px;
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 40px;
+        height: 28px;
+    }
+    .bottom-block span {
+        font-size: 12px;
+        line-height: 13.72px;
+    }
+}
