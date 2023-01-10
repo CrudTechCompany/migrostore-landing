@@ -68,7 +68,7 @@ const Footer = () => {
                         + 48 791 490 146
                     </a>
                     <span className={style["item"]}>
-                        A.Ostrowskiego 13 53-238, Wroclaw
+                        ul. Księcia Witolda 49, lok. 15 50-202 Wrocław
                     </span>
                 </div>
             </div>
