@@ -10,24 +10,56 @@ const MobileMenu = (props) => {
         <div className={style["menu-block"]}>
             <div className={style["title-block"]}>
                 <img className={style["logo-block"]} src={migro_store} alt="" />
-                <button className={style["close-block"]} onClick={props.onClickMenuHandler}>
-                    <img
-                        src={close_icon}
-                        alt=""
-                    />
+                <button
+                    className={style["close-block"]}
+                    onClick={props.onClickMenuHandler}
+                >
+                    <img src={close_icon} alt="" />
                 </button>
             </div>
             <div className={style["link-block"]}>
-                <Link to="/" className={style["link-item"]} onClick={props.onClickMenuHandler}>Home</Link>
-                <Link to="contact-us" className={style["link-item"]} onClick={props.onClickMenuHandler}>Contact us</Link>
-                <Link to="privacy-policy" className={style["link-item"]} onClick={props.onClickMenuHandler}>Privacy policy</Link>
-                <Link to="terms-and-conditions" className={style["link-item"]} onClick={props.onClickMenuHandler}>Terms & Conditions</Link>
+                <Link
+                    to="/"
+                    className={style["link-item"]}
+                    onClick={props.onClickMenuHandler}
+                >
+                    Home
+                </Link>
+                <Link
+                    to="contact-us"
+                    className={style["link-item"]}
+                    onClick={props.onClickMenuHandler}
+                >
+                    Contact us
+                </Link>
+                <Link
+                    to="privacy-policy"
+                    className={style["link-item"]}
+                    onClick={props.onClickMenuHandler}
+                >
+                    Privacy policy
+                </Link>
+                <Link
+                    to="terms-and-conditions"
+                    className={style["link-item"]}
+                    onClick={props.onClickMenuHandler}
+                >
+                    Terms & Conditions
+                </Link>
             </div>
-            <a className={style["store-link"]}>
-                <img src={app_store} alt=""/>
+            <a
+                className={style["store-link"]}
+                href="https://apps.apple.com/pl/app/migrostore/id1663022722"
+                target="_blank"
+            >
+                <img src={app_store} alt="" />
             </a>
-            <a className={style["store-link"]}>
-                <img src={google_play} alt=""/>
+            <a
+                className={style["store-link"]}
+                href="https://play.google.com/store/apps/details?id=com.migrostore.migrostore_cv"
+                target="_blank"
+            >
+                <img src={google_play} alt="" />
             </a>
         </div>
     );

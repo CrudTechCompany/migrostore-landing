@@ -15,10 +15,18 @@ const TitleBlock = () => {
                     Poland.
                 </span>
                 <div className={style["content-link"]}>
-                    <a className={style["link-item"]}>
+                    <a
+                        className={style["link-item"]}
+                        href="https://apps.apple.com/pl/app/migrostore/id1663022722"
+                        target="_blank"
+                    >
                         <img src={app_store} alt="" />
                     </a>
-                    <a className={style["link-item"]}>
+                    <a
+                        className={style["link-item"]}
+                        href="https://play.google.com/store/apps/details?id=com.migrostore.migrostore_cv"
+                        target="_blank"
+                    >
                         <img src={google_play} alt="" />
                     </a>
                 </div>
@@ -26,22 +34,38 @@ const TitleBlock = () => {
             <div className={style["block-image"]}>
                 <img className={style["image"]} src={image} alt="" />
                 <div className={style["side-block"]}>
-                    <a className={style["link-item"]}>
+                    <a
+                        className={style["link-item"]}
+                        href="https://apps.apple.com/pl/app/migrostore/id1663022722"
+                        target="_blank"
+                    >
                         <img src={app_store} alt="" />
                     </a>
-                    <a className={style["link-item"]}>
+                    <a
+                        className={style["link-item"]}
+                        href="https://play.google.com/store/apps/details?id=com.migrostore.migrostore_cv"
+                        target="_blank"
+                    >
                         <img src={google_play} alt="" />
                     </a>
                 </div>
             </div>
 
             <div className={style["bottom-block"]}>
-                <Link to="/" className={style["bottom-item"]}>
+                <a
+                    className={style["bottom-item"]}
+                    href="https://apps.apple.com/pl/app/migrostore/id1663022722"
+                    target="_blank"
+                >
                     <img src={mobile_app_store} alt="" />
-                </Link>
-                <Link to="/" className={style["bottom-item"]}>
+                </a>
+                <a
+                    className={style["bottom-item"]}
+                    href="https://play.google.com/store/apps/details?id=com.migrostore.migrostore_cv"
+                    target="_blank"
+                >
                     <img src={mobile_google_play} alt="" />
-                </Link>
+                </a>
             </div>
         </div>
     );
